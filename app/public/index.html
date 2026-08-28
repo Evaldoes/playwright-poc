@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Playwright POC - Login</title>
+</head>
+<body>
+  <h1>Login</h1>
+  <form id="login-form" action="/login" method="POST">
+    <label for="username">Username</label>
+    <input id="username" name="username" type="text" />
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" />
+
+    <button type="submit" data-testid="login-submit">Sign in</button>
+  </form>
+
+  <hr />
+
+  <h2>Search (safe)</h2>
+  <form id="search-form">
+    <input id="search-input" type="text" placeholder="Search..." />
+    <button id="search-submit" type="submit">Search</button>
+  </form>
+  <ul id="search-results"></ul>
+
+  <script src="/login.js"></script>
+</body>
+</html>

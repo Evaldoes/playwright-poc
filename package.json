@@ -1,0 +1,29 @@
+{
+  "name": "playwright-poc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright POC: E2E automation, API testing, defensive security and visual/performance concepts",
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "app": "ts-node app/server.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@axe-core/playwright": "^4.10.0",
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.18.0",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/node": "^20.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "cookie-parser": "^1.4.6"
+  }
+}
